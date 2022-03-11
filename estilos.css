@@ -1,0 +1,464 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulo);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+ul, li{
+    list-style: none;
+    padding-left: 0;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+
+.header{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgb(222, 240, 255) 55%);
+    padding: 1.5rem;
+}
+
+.espacio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p{
+    font-weight: var(--grande);
+    font-size: 3rem;
+    color: var(--azul);
+}
+
+
+.botonesSup{
+    display: flex;
+    gap: 4rem;
+}
+
+.navegacion a{
+    color: var(--gris);
+    font-size: 1.8rem;
+}
+
+.explo a{
+    background-color: var(--azul);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: .5rem;
+    color: var(--blanco);
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+}
+
+.cabecera{
+    position: relative;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.top{
+    background-blend-mode: soft-light;
+    padding-left: 8rem;
+    background-image: url(triangulos.jpg);
+    height: 70rem;
+}
+
+.top h1{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 5rem;
+    width: 90%;
+    text-align: left;
+}
+
+.top p{
+    color: var(--gris);
+    font-size: 2rem;
+}
+
+.etiquetas{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.etiqueta{
+    margin-top: 8rem;
+}
+
+.enfer{
+    background-image: url(enfermera.png);
+    height: 70rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner{
+    position: absolute;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+    border-radius: 1rem;
+    margin: -16rem 1rem 1rem 15rem;
+    background-color: var(--blanco);
+}
+
+.datosVa p{
+    padding-left: 1rem;
+}
+
+.datosVa i{
+    color: var(--azul);
+}
+
+.botonBanner a{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.botonBanner{
+    padding: 2rem;
+}
+
+.marcas{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.info h2{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 4rem;
+    width: 90%;
+    text-align: left;
+}
+
+.info p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 50%;
+}
+
+.cajas{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.cajitas{ 
+    border-radius: .5rem;
+    padding: 3rem;
+}
+
+
+.cajitas h3{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: left;
+    
+}
+
+.cajitas p{
+    color: var(--gris);
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.espacioImg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.paciente{
+    margin-top: 5rem;
+    padding-left: 8rem;
+    background-image: url(paciente.png);
+    background-blend-mode: soft-light;
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.antesVac h2{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.antesVac p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 100%;
+}
+
+.acordeon{
+    margin-top: 2rem;
+    padding: 4rem;
+}
+
+.botonesAntes {
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: var(--blanco);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 2px 5px rgb(216, 216, 216);
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonesAntes i{
+    font-size: 2rem;
+    color: var(--azul);
+    padding-right: 1rem;
+    background-color: var(--aclaro);
+    padding: .8rem;
+    border-radius: .5rem;
+}
+
+.active, .botonesAntes:hover {
+    transition-duration: 0.5s;
+    background-color: var(--aclaro);
+}
+
+.panel {
+    transition-duration: 0.5s;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel p{
+    color: var(--gris);
+    font-size: 1.6rem;
+}
+
+.EmergencyContact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 10rem;
+}
+
+.ctn-ctc h2{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.ctn-ctc p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 90%;
+}
+
+.docCon{
+    margin-top: 10rem;
+    padding-left: 10rem;
+    background-image: url(docContac.png);
+    background-blend-mode: soft-light;
+    height: 60rem;
+    background-size: cover;
+    background-position: center center;
+} 
+
+.botonContactar{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.contacto{
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 5px rgb(216, 216, 216);
+}
+
+.contenido-trj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-trj i{
+    color: var(--azul);
+    font-size: 2rem;
+    background-color: var(--aclaro);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+}
+
+.contenido-trj h3{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.contenido-trj p{
+    color: var(--gris);
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+.btn-aclaro{
+    background-color: var(--aclaro);
+    color: var(--azul);
+    font-weight: var(--grande);
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+}
+
+.btn-aclaro:hover{
+    transition-duration: 0.4s;
+    background-color: var(--azul);
+    color: var(--celeste);
+    font-weight: var(--regular);
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+}
+
+.foot{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer{    
+    background-color: var(--celeste); 
+    padding: 4rem;
+}
+.leyenda{    
+    color: var(--gris);
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+.footM{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    display: grid;
+}
+
+.foot-mn h2{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    font-size: 2rem;
+    text-align: left;
+    
+}
+
+.lista li{
+    margin-top: 2rem;
+}
+
+.lista a{
+    color: var(--gris);
+    font-size: 1.5rem;    
+}
+
+.copy p{
+    color: var(--gris);
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+:root {
+    --suave: 200;
+    --mediana : 400;
+    --grande: 600;
+    --azul: #2448da;
+    --azulfuerte: #1f3e72;
+    --aclaro: #addeff;
+    --gris: #727883;
+    --blanco: #ffffff;
+}
