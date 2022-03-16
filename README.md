@@ -1,2 +1,2 @@
 # VacunacionSalvada
-Avance de la copia de la vacunación
+Copia de una página. Hecho con html y css.
